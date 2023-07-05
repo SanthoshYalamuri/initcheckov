@@ -41,3 +41,5 @@ jobs:
           checkov -v
           pwd
           echo $GITHUB_WORKSPACE
+          ls /home/runner/work
+          ls /home/runner/work/terraform-azurerm-virtual-machine
