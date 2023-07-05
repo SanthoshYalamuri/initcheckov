@@ -34,10 +34,9 @@ jobs:
       - name: Install checkov with pip
         run: pip install checkov
 
-      # Get checkov version
-      - name: Fetch checkov version
+      # Execute checkov 
+      - name: Execute checkov 
         run: |
-          echo Add other actions to build,
           checkov -v
           echo $GITHUB_WORKSPACE/terraform-azurerm-virtual-machine
           ls $GITHUB_WORKSPACE/terraform-azurerm-virtual-machine
