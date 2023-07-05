@@ -40,3 +40,4 @@ jobs:
           echo Add other actions to build,
           checkov -v
           pwd
+          echo $GITHUB_WORKSPACE
