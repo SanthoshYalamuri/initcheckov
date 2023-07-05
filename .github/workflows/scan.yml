@@ -27,7 +27,6 @@ jobs:
       - name: Clone azurerm virtual machine terraform repository
         uses: actions/checkout@v2
         with:
-          github-server-url: https://github.com
           repository: Azure/terraform-azurerm-virtual-machine
           path: terraform-azurerm-virtual-machine
       # Runs a single command using the runners shell
