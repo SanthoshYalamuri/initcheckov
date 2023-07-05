@@ -39,7 +39,8 @@ jobs:
         run: |
           echo Add other actions to build,
           checkov -v
-          pwd
-          echo $GITHUB_WORKSPACE
-          ls /home/runner/work/Azure/terraform-azurerm-virtual-machine
+          echo $GITHUB_WORKSPACE/terraform-azurerm-virtual-machine
+          ls $GITHUB_WORKSPACE/terraform-azurerm-virtual-machine
+          checkov -d $GITHUB_WORKSPACE/terraform-azurerm-virtual-machine
+          
           
